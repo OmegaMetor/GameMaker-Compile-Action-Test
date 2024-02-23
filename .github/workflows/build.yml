@@ -16,3 +16,4 @@ jobs:
           runtime-version: "test"
           platform: "test"
           game-yyp-path: "test"
+          access-key: "${{ secrets.GM_ACCESS_KEY }}"
