@@ -11,9 +11,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: OmegaMetor/GameMakerBuildAction@v1.1
+      - uses: OmegaMetor/GameMakerBuildAction@v1.2
         with:
-          runtime-version: "test"
-          platform: "test"
-          game-yyp-path: "test"
+          runtime-version: ""
+          platform: "linux"
+          game-yyp-path: "$GITHUB_WORKSPACE/src/Platformer Basic.yyp"
           access-key: "${{ secrets.GM_ACCESS_KEY }}"
+          out-file: "Game.zip"
