@@ -11,7 +11,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: OmegaMetor/GameMakerBuildAction@v1.2
+      - uses: OmegaMetor/GameMakerBuildAction@v1.3
         with:
           runtime-version: ""
           platform: "linux"
